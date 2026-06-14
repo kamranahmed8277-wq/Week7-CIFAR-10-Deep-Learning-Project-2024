@@ -1,20 +1,10 @@
-
----
-
-## 2. .gitignore
-
-```gitignore
+# Create/update .gitignore
+cat > .gitignore << 'EOF'
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
 *.so
 .Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
 
 # Virtual Environment
 venv/
@@ -25,106 +15,46 @@ ENV/
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 .DS_Store
 
-# Jupyter Notebook
-.ipynb_checkpoints/
-*.ipynb
-
-# Model Files (optional - remove if you want to share models)
-*.h5
+# Model Files (Large - exclude from GitHub)
 *.keras
+*.h5
 *.pb
 *.tflite
 *.onnx
-models/
+*.hdf5
+*.ckpt
 *.weights.h5
 
 # Data files
 *.npz
 *.npy
 *.pkl
-*.pickle
-*.parquet
 
-# Checkpoints
-*.ckpt
-*.ckpt.index
-*.ckpt.data-*
+# Model directories
+BestModelweek17/
+models/
 checkpoints/
-checkpoint
 
-# TensorFlow
-*.meta
-*.index
-*.data-*
-*.pbtxt
-*.pb
-*.events.out.tfevents.*
 
-# MLflow
-mlruns/
-mlflow.db
-
-# DVC
-.dvc/
-.cache/
-
-# Environment variables
+# Environment
 .env
 .env.local
-
-# OS
-Thumbs.db
-.DS_Store
-desktop.ini
 
 # Logs
 *.log
 logs/
 
-# Temporary files
-*.tmp
-*.temp
-*.bak
+# OS files
+Thumbs.db
+desktop.ini
 
-# Test coverage
-.coverage
-htmlcov/
-.tox/
-
-# Distribution
-dist/
-build/
-*.egg-info/
-*.egg
-
-# Database
-*.db
-*.sqlite
-*.sqlite3
-
-# Secrets
-*.key
-*.pem
-*.crt
-secrets/
-
-# Project specific
-week7_best_model.keras
-cnn_best.keras
-mobilenetv2_*.keras
-*.npz
-*.png
-!requirements.txt
-!README.md
-!.gitignore
-
-# Large files (>100MB)
+# Large archives
 *.7z
 *.rar
 *.zip
 *.tar.gz
+EOF
+
+# Add and commit .gitignore
