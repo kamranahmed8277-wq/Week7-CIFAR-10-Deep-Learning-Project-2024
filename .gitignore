@@ -1,0 +1,30 @@
+# Python
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+
+.venv/
+venv/
+env/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# IDE
+
+.idea/
+.vscode/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# Model Files
+
+
