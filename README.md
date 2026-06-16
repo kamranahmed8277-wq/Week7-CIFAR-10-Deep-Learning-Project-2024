@@ -294,11 +294,8 @@ Open a Pull Request
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 👨‍💻 Author
-Your Name
-
-GitHub: @yourusername
-
-LinkedIn: Your LinkedIn
+Kamran Ahmed
+LinkedIn: linkedin.com/in/kamran-ahmed-ai44
 
 🙏 Acknowledgments
 CIFAR-10 dataset creators
